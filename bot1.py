@@ -4,7 +4,7 @@ import config
 
  
 bot = telebot.TeleBot(config.token)
-client = pymongo.MongoClient("mongodb+srv://Boris:work12345@cluster0.f4niuck.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://Boris:<password>@cluster0.f4niuck.mongodb.net/?retryWrites=true&w=majority")
 db = client.testdata
 coll = db.users
 @bot.message_handler(content_types=["text"])
